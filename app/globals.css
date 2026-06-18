@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-saffron: #FF9933;
+  --color-saffron-dark: #cc7a29;
+  --color-royal: #1E3A8A;
+  --color-royal-dark: #172c6b;
+  --color-gold: #F5E6A3;
+  --color-beige: #FFF8F0;
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+@layer base {
+  body {
+    @apply bg-beige text-gray-900 font-sans;
+  }
+}
