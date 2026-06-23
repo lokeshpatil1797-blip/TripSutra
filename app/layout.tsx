@@ -13,8 +13,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'TrayJourney | Discover the Real India',
-  description: 'Experience authentic culture, heritage, food, festivals, and local life with affordable travel packages designed for international travelers.',
+  title: "Trip Sutra | Budget Friendly India Travel Packages",
+  description: "Explore India with affordable travel packages, cultural experiences, local guides, and unforgettable journeys.",
+  openGraph: {
+    title: "Trip Sutra | Budget Friendly India Travel Packages",
+    description: "Explore India with affordable travel packages and cultural experiences.",
+    url: "https://trip-sutra-navy.vercel.app",
+    siteName: "Trayjourney",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
