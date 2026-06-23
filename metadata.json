@@ -1,5 +1,5 @@
 {
-  "name": "Trip Sutra",
+  "name": "TrayJourney",
   "description": "A modern travel agency website for foreign tourists exploring India through authentic cultural experiences.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

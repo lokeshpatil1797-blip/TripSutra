@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Sarah Jenkins',
     country: 'United Kingdom',
     rating: 5,
-    text: 'Traveling to India seemed daunting, but Trip Sutra made it the trip of a lifetime. The guides were phenomenally knowledgeable and the local cooking class was the highlight of our journey!',
+    text: 'Traveling to India seemed daunting, but TrayJourney made it the trip of a lifetime. The guides were phenomenally knowledgeable and the local cooking class was the highlight of our journey!',
     seed: 'sarah'
   },
   {

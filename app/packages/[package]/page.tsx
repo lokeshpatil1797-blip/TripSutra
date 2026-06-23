@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ package: 
   const pkg = packages_data.find((p) => p.slug === pkgSlug);
   if (!pkg) return { title: 'Not Found' };
   return {
-    title: `${pkg.name} | Trip Sutra`,
+    title: `${pkg.name} | TrayJourney`,
     description: pkg.highlights.join(', '),
   };
 }

@@ -47,12 +47,12 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-saffron font-bold tracking-wider uppercase text-sm mb-2 block">About Trip Sutra</span>
+            <span className="text-saffron font-bold tracking-wider uppercase text-sm mb-2 block">About TrayJourney</span>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-royal mb-6 leading-tight">
               We Don&apos;t Just Show You India, We Make You Feel It.
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Founded by passionate travelers, Trip Sutra was born with a mission: to bridge the gap between foreign tourists and the authentic soul of India. We wanted to move beyond the typical tourist traps and create a space where travelers can truly experience our vibrant heritage.
+              Founded by passionate travelers, TrayJourney was born with a mission: to bridge the gap between foreign tourists and the authentic soul of India. We wanted to move beyond the typical tourist traps and create a space where travelers can truly experience our vibrant heritage.
             </p>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               Whether you are an adventurer seeking the heights of the Himalayas, a spiritual seeker drawn to Varanasi, or a culture enthusiast wanting to taste the real spice of life, we are your trusted companions on this journey.

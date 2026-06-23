@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { destinations, states_data, packages_data, blogs_data } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tripsutra.com';
+  const baseUrl = 'https://trayjourney.com';
 
   const sitemapData: MetadataRoute.Sitemap = [
     {

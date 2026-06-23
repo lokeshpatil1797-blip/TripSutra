@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { Menu, X, MapPin } from 'lucide-react';
+import { Menu, X, MapPin, Compass } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 import SearchBar from '@/components/shared/SearchBar';
@@ -26,12 +26,12 @@ export default function Navbar() {
     <nav className={`sticky top-0 w-full z-50 transition-all duration-300 bg-white border-b border-gold ${isScrolled ? 'py-3 shadow-sm' : 'py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 bg-saffron rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 border-2 border-white rounded-full"></div>
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2 group">
+            <div className="w-10 h-10 bg-gradient-to-tr from-saffron to-[#E85D04] rounded-xl shadow-md flex items-center justify-center transform group-hover:-rotate-12 transition-transform duration-300">
+               <Compass className="w-6 h-6 text-white" />
             </div>
-            <span className="font-sans text-xl font-bold tracking-tight text-royal">
-              Trip Sutra
+            <span className="font-sans text-2xl font-bold tracking-tight text-royal flex items-center">
+              Tray<span className="text-saffron">Journey</span>
             </span>
           </Link>
           

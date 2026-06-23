@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blog = blogs_data.find((b) => b.slug === slug);
   if (!blog) return { title: 'Not Found' };
   return {
-    title: `${blog.title} | Trip Sutra Blog`,
+    title: `${blog.title} | TrayJourney Blog`,
     description: blog.excerpt,
   };
 }
@@ -61,9 +61,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
              {blog.excerpt}
            </p>
            
-           <div className="text-lg text-slate-800 leading-relaxed whitespace-pre-line">
-             {blog.content}
-           </div>
+           <div 
+             className="text-lg text-slate-800 leading-relaxed prose prose-lg prose-slate prose-headings:font-serif max-w-none"
+             dangerouslySetInnerHTML={{ __html: blog.content }}
+           />
         </article>
       </div>
 

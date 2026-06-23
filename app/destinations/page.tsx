@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 
 export const metadata = {
-  title: 'Destinations in India | Trip Sutra',
+  title: 'Destinations in India | TrayJourney',
   description: 'Explore the best travel destinations in India.',
 };
 

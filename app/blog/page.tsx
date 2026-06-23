@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { blogs_data } from '@/lib/data';
 
 export const metadata = {
-  title: 'Travel Blog | Trip Sutra',
+  title: 'Travel Blog | TrayJourney',
   description: 'Travel tips, guides, and stories from India.',
 };
 

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const city = destinations.find((d) => d.slug === cityParam);
   if (!city) return { title: 'Not Found' };
   return {
-    title: `${city.name} Travel Guide & Tour Packages | Trip Sutra`,
+    title: `${city.name} Travel Guide & Tour Packages | TrayJourney`,
     description: city.about.substring(0, 160),
   };
 }

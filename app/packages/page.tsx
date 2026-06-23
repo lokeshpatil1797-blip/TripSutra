@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { packages_data } from '@/lib/data';
 
 export const metadata = {
-  title: 'India Tour Packages | Trip Sutra',
+  title: 'India Tour Packages | TrayJourney',
   description: 'Book the best holiday packages and travel experiences in India.',
 };
 

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const state = states_data.find((s) => s.slug === stateSlug);
   if (!state) return { title: 'Not Found' };
   return {
-    title: `${state.name} Travel & Tourism Guide | Trip Sutra`,
+    title: `${state.name} Travel & Tourism Guide | TrayJourney`,
     description: state.history.substring(0, 160),
   };
 }

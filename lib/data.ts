@@ -222,7 +222,14 @@ export const blogs_data = [
     readingTime: '5 min read',
     image: 'https://picsum.photos/seed/india-climate/800/500',
     excerpt: 'Plan your perfect trip by understanding India\'s diverse climate, from the snowy Himalayas to the tropical south.',
-    content: 'India is a vast country with diverse climatic zones. The best time to visit broadly depends on which region you plan to explore. For most parts of India, including Rajasthan, Delhi, Agra (The Golden Triangle), and Goa, the winter months from October to March offer the most pleasant weather...'
+    content: `<h2>Understanding India's Climate</h2>
+      <p>India is a vast country with diverse climatic zones. The best time to visit broadly depends on which region you plan to explore. For most parts of India, including Rajasthan, Delhi, Agra (The Golden Triangle), and Goa, the winter months from October to March offer the most pleasant weather.</p>
+      <h2>Winter (October to March) - The Peak Season</h2>
+      <p>This is undeniably the best time to explore most parts of the country. The weather is cool, dry, and incredibly pleasant. This is the ideal time to explore Rajasthan's majestic forts, experience the vibrant culture of North India, and relax on the beautiful beaches of Goa.</p>
+      <h2>Summer (April to June) - The Himalayan Escape</h2>
+      <p>Summers in India can be scorching, especially in the plains. However, this is the perfect time to head to the Himalayas. Destinations like Ladakh, Himachal Pradesh, and Uttarakhand offer a cool refuge and breathtaking mountain passes.</p>
+      <h2>Monsoon (July to September) - The Lush Green Era</h2>
+      <p>While heavy rains can disrupt travel plans, the monsoon season transforms the landscape into a vibrant green paradise. Kerala, often referred to as 'God's Own Country', is spectacular during this time, especially for Ayurvedic treatments.</p>`
   },
   {
     slug: 'indian-food-guide-for-foreigners',
@@ -232,7 +239,17 @@ export const blogs_data = [
     readingTime: '7 min read',
     image: 'https://picsum.photos/seed/india-food/800/500',
     excerpt: 'Navigate the complex, vibrant, and incredibly delicious world of Indian cuisine without upsetting your stomach.',
-    content: 'Indian cuisine is incredibly diverse, with each region offering its own unique flavors and specialties. While the spices can be intimidating at first, starting with milder dishes and gradually increasing the heat is the best approach. Don\'t forget to try regional street food from reputable vendors!'
+    content: `<h2>Embracing the Spice</h2>
+      <p>Indian cuisine is incredibly diverse, with each region offering its own unique flavors and specialties. While the spices can be intimidating at first, starting with milder dishes and gradually increasing the heat is the best approach.</p>
+      <h2>Top Dishes to Try</h2>
+      <ul>
+        <li><strong>Butter Chicken (Murgh Makhani):</strong> A mildly spiced, creamy curry.</li>
+        <li><strong>Palak Paneer:</strong> Fresh spinach and cottage cheese curry.</li>
+        <li><strong>Masala Dosa:</strong> A crispy crepe filled with a savory potato mixture, native to South India.</li>
+        <li><strong>Biryani:</strong> An aromatic rice dish cooked with meat or vegetables.</li>
+      </ul>
+      <h2>Eating Safely</h2>
+      <p>Stick to bottled water, eat freshly cooked hot meals, and don't be afraid to ask the restaurant to adjust the spice level to your preference. Street food is amazing, but choose busy stalls with high turnover!</p>`
   },
   {
     slug: 'top-10-cultural-etiquette-tips',
@@ -242,16 +259,11 @@ export const blogs_data = [
     readingTime: '6 min read',
     image: 'https://picsum.photos/seed/india-etiquette/800/500',
     excerpt: 'Learn the dos and don\'ts of Indian culture to show respect and connect better with locals during your travels.',
-    content: 'Understanding cultural nuances is key to a rewarding trip to India. Always remove your shoes before entering temples or homes. Dress modestly, especially in religious sites. Use your right hand for eating and handing over items, as the left hand is traditionally considered unclean.'
-  },
-  {
-    slug: 'india-travel-budget-guide',
-    title: 'India Travel Budget Guide: How Much Does it Cost?',
-    author: 'Priya Patel',
-    date: 'Nov 02, 2023',
-    readingTime: '7 min read',
-    image: 'https://picsum.photos/seed/blog2/800/500',
-    excerpt: 'From luxury palaces to budget backpacking. Find out how much you need for your trip to India.',
-    content: 'Traveling to India can be extremely affordable or unabashedly luxurious. Your daily budget will largely depend on your travel style. Backpackers can get by on $20-$30 a day, mid-range travelers should budget $50-$100, while luxury travelers can spend upwards of $200 per day...'
+    content: `<h2>Respecting Temples and Holy Sites</h2>
+      <p>Understanding cultural nuances is key to a rewarding trip to India. Always remove your shoes before entering temples, mosques, or homes. Cover your shoulders and legs when visiting religious sites. Many places may also ask you to cover your head.</p>
+      <h2>Greetings and Social Norms</h2>
+      <p>A traditional 'Namaste' (palms pressed together) is the perfect greeting. When eating or handing over items, try to use your right hand, as the left hand is traditionally considered unclean.</p>
+      <h2>Photography</h2>
+      <p>Always ask for permission before taking photos of people, especially in rural areas or places of worship.</p>`
   }
 ];

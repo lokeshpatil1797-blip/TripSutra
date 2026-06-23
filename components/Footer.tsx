@@ -1,5 +1,5 @@
 'use client';
-import { MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { MapPin, Facebook, Twitter, Instagram, Youtube, Compass } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-saffron rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-white rounded-full"></div>
+            <div className="flex items-center gap-2 mb-6 group">
+              <div className="w-10 h-10 bg-gradient-to-tr from-saffron to-[#E85D04] rounded-xl shadow-md flex items-center justify-center transform group-hover:-rotate-12 transition-transform duration-300">
+                <Compass className="w-6 h-6 text-white" />
               </div>
-              <span className="font-sans text-xl font-bold tracking-tight text-white">
-                Trip Sutra
+              <span className="font-sans text-2xl font-bold tracking-tight text-white flex items-center">
+                Tray<span className="text-saffron">Journey</span>
               </span>
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">

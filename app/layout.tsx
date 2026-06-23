@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Trip Sutra | Discover the Real India',
+  title: 'TrayJourney | Discover the Real India',
   description: 'Experience authentic culture, heritage, food, festivals, and local life with affordable travel packages designed for international travelers.',
 };
 
