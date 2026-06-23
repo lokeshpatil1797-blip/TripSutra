@@ -105,17 +105,17 @@ export default function GroupCalculator() {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center text-slate-600 font-medium">
                       <span>Original Total</span>
-                      <span className="line-through">${originalTotal.toLocaleString()}</span>
+                      <span className="line-through">${originalTotal.toLocaleString('en-US')}</span>
                     </div>
                     <div className="flex justify-between items-center text-saffron font-bold text-lg">
                       <span>Total Savings</span>
-                      <span>- ${savings.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span>
+                      <span>- ${savings.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span>
                     </div>
                     <div className="pt-4 border-t border-slate-100">
                       <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Final Payable Amount</div>
                       <div className="text-4xl font-serif font-bold text-royal flex items-center gap-1">
                         <DollarSign className="w-8 h-8 text-saffron" />
-                        {finalTotal.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+                        {finalTotal.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
                       </div>
                     </div>
                     <button className="w-full bg-royal hover:bg-royal-dark text-white font-bold py-4 rounded-xl transition-colors mt-4">

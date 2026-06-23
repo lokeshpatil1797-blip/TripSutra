@@ -2,10 +2,13 @@
 import { motion } from 'motion/react';
 import { Clock, Check, Star } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
+// Let's use the local data definition so this component is self-contained for props, but we route to the right slug.
 const packages = [
   {
     title: 'Golden Triangle Tour',
+    slug: 'golden-triangle-tour',
     duration: '7 Days / 6 Nights',
     price: '$799',
     rating: '4.9',
@@ -15,7 +18,8 @@ const packages = [
     popular: true
   },
   {
-    title: 'Rajasthan Heritage Tour',
+    title: 'Rajasthan Royal Experience',
+    slug: 'rajasthan-royal-tour',
     duration: '10 Days / 9 Nights',
     price: '$1,099',
     rating: '4.8',
@@ -25,37 +29,8 @@ const packages = [
     popular: false
   },
   {
-    title: 'Kerala Backwaters Escape',
-    duration: '6 Days / 5 Nights',
-    price: '$650',
-    rating: '5.0',
-    reviews: 156,
-    highlights: ['Houseboat Stay', 'Munnar Tea Gardens', 'Ayurvedic Massage', 'Kathakali Performance'],
-    image: 'https://picsum.photos/seed/kerala-boat/800/600',
-    popular: true
-  },
-  {
-    title: 'Spiritual India Journey',
-    duration: '8 Days / 7 Nights',
-    price: '$850',
-    rating: '4.7',
-    reviews: 82,
-    highlights: ['Varanasi Ganga Aarti', 'Sarnath Ruins', 'Haridwar Temples', 'Yoga in Rishikesh'],
-    image: 'https://picsum.photos/seed/varanasi-spiritual/800/600',
-    popular: false
-  },
-  {
-    title: 'Himalayan Adventure Tour',
-    duration: '12 Days / 11 Nights',
-    price: '$1,350',
-    rating: '4.9',
-    reviews: 110,
-    highlights: ['Leh Ladakh Trekking', 'Pangong Lake', 'Buddhist Monasteries', 'Stargazing Camp'],
-    image: 'https://picsum.photos/seed/himalayas/800/600',
-    popular: false
-  },
-  {
     title: 'Goa Beach Escape',
+    slug: 'goa-beach-escape',
     duration: '5 Days / 4 Nights',
     price: '$450',
     rating: '4.8',
@@ -73,7 +48,10 @@ export default function Packages() {
         <div className="text-center mb-16">
           <span className="text-saffron font-bold tracking-wider uppercase text-sm mb-2 block">Curated Journeys</span>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-royal mb-4">Featured Packages</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Handpicked itineraries designed to give you the perfect balance of adventure, culture, and relaxation.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-6">Handpicked itineraries designed to give you the perfect balance of adventure, culture, and relaxation.</p>
+          <Link href="/packages" className="text-saffron font-bold hover:text-royal transition-colors">
+            View All Packages &rarr;
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -94,7 +72,7 @@ export default function Packages() {
                 <div className="absolute top-4 left-4 z-10 bg-royal text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
                   Up to 15% Group Discount
                 </div>
-                <div className="relative h-60 overflow-hidden">
+                <Link href={`/packages/${pkg.slug}`} className="relative h-60 overflow-hidden block">
                    <Image 
                      src={pkg.image}
                      alt={pkg.title}
@@ -114,10 +92,12 @@ export default function Packages() {
                          <span className="opacity-80">({pkg.reviews})</span>
                       </div>
                    </div>
-                </div>
+                </Link>
 
                 <div className="p-6 flex-1 flex flex-col">
-                   <h3 className="text-2xl font-serif font-bold text-royal mb-2 italic">{pkg.title}</h3>
+                   <h3 className="text-2xl font-serif font-bold text-royal mb-2 italic">
+                     <Link href={`/packages/${pkg.slug}`} className="hover:text-saffron transition-colors">{pkg.title}</Link>
+                   </h3>
                    <div className="text-3xl font-bold text-royal mb-6">
                       {pkg.price} <span className="text-sm text-gray-500 font-normal">/ person</span>
                    </div>
@@ -133,9 +113,9 @@ export default function Packages() {
                       ))}
                    </div>
 
-                   <button className="w-full bg-royal hover:bg-royal-dark text-white font-bold py-3.5 rounded-xl transition-colors shadow-md">
-                      Book Now
-                   </button>
+                   <Link href={`/packages/${pkg.slug}`} className="w-full text-center bg-royal hover:bg-royal-dark text-white font-bold py-3.5 rounded-xl transition-colors shadow-md block">
+                      View Details
+                   </Link>
                 </div>
              </motion.div>
           ))}
