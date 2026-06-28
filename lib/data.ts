@@ -213,6 +213,89 @@ export const packages_data = [
   }
 ];
 
+export const experiences_data = [
+  {
+    slug: 'indian-wedding',
+    title: 'Traditional Indian Weddings',
+    seed: 'indian-wedding',
+    image: 'https://picsum.photos/seed/indian-wedding/1200/800',
+    description: 'Experience the grandeur, colors, and vibrant traditions of an authentic Indian wedding. Participate in the pre-wedding rituals like Mehndi and Sangeet, and witness the beautiful sacred ceremonies.',
+    highlights: ['Participate in Mehndi rituals', 'Enjoy traditional Sangeet music and dance', 'Witness the Baraat procession', 'Savor authentic wedding feasts'],
+    duration: '2-3 Days',
+    location: 'Rajasthan, Delhi, and Kerala options available',
+  },
+  {
+    slug: 'indian-village',
+    title: 'Local Village Tours',
+    seed: 'indian-village',
+    image: 'https://picsum.photos/seed/indian-village/1200/800',
+    description: 'Step away from the bustling cities and explore the heart of India in its villages. Interact with local artisans, farmers, and families to experience traditional Indian rural life.',
+    highlights: ['Farm walks and agriculture experiences', 'Pottery and traditional crafts making', 'Home-cooked village meals', ' Bullock cart rides'],
+    duration: '1-2 Days',
+    location: 'Rajasthan, Punjab, and Maharashtra',
+  },
+  {
+    slug: 'yoga-retreat',
+    title: 'Yoga & Meditation Retreats',
+    seed: 'yoga-retreat',
+    image: 'https://picsum.photos/seed/yoga-retreat/1200/800',
+    description: 'Rejuvenate your mind, body, and soul in the birthplace of Yoga. Our retreats offer expert guidance, serene environments, and holistic wellness practices.',
+    highlights: ['Daily Yoga and Pranayama sessions', 'Guided meditation', 'Ayurvedic treatments and massages', 'Sattvic (pure) vegetarian meals'],
+    duration: '3-14 Days',
+    location: 'Rishikesh, Kerala, and Goa',
+  },
+  {
+    slug: 'indian-cooking',
+    title: 'Indian Cooking Classes',
+    seed: 'indian-cooking',
+    image: 'https://picsum.photos/seed/indian-cooking/1200/800',
+    description: 'Learn the secrets of Indian spices and culinary techniques from local experts. From street food to royal curries, master the art of Indian cooking.',
+    highlights: ['Local spice market tours', 'Hands-on cooking with a local chef', 'Learn regional specialties', 'Enjoy the meal you prepared'],
+    duration: 'Half Day',
+    location: 'Delhi, Jaipur, and Mumbai',
+  },
+  {
+    slug: 'diwali-celebration',
+    title: 'Festival Celebrations',
+    seed: 'diwali-celebration',
+    image: 'https://picsum.photos/seed/diwali-celebration/1200/800',
+    description: 'Be part of India\'s most vibrant festivals like Diwali, Holi, or Pushkar Fair. Celebrate alongside locals and experience the cultural joy firsthand.',
+    highlights: ['Guided festival participation', 'Traditional attire provided', 'Cultural performances', 'Festive special meals and sweets'],
+    duration: '1-3 Days',
+    location: 'Varies based on festival',
+  },
+  {
+    slug: 'tiger-safari',
+    title: 'Wildlife Safaris',
+    seed: 'tiger-safari',
+    image: 'https://picsum.photos/seed/tiger-safari/1200/800',
+    description: 'Explore the diverse wildlife of India in renowned national parks. Spot the majestic Bengal Tiger, elephants, leopards, and rare bird species in their natural habitats.',
+    highlights: ['Guided jeep and canter safaris', 'Expert naturalist guides', 'Stay in eco-friendly jungle lodges', 'Bird watching excursions'],
+    duration: '2-4 Days',
+    location: 'Ranthambore, Jim Corbett, and Bandhavgarh',
+  },
+  {
+    slug: 'indian-temple',
+    title: 'Temple Tours',
+    seed: 'indian-temple',
+    image: 'https://picsum.photos/seed/indian-temple/1200/800',
+    description: 'Discover the architectural marvels and spiritual significance of India\'s ancient temples. Experience the serene atmosphere and historical grandeur.',
+    highlights: ['Guided tours of UNESCO World Heritage temples', 'Attend evening Aarti ceremonies', 'Learn about Hindu mythology and architecture', 'Spiritual walks'],
+    duration: '1-3 Days',
+    location: 'Tamil Nadu, Varanasi, and Khajuraho',
+  },
+  {
+    slug: 'indian-street-food',
+    title: 'Street Food Markets',
+    seed: 'indian-street-food',
+    image: 'https://picsum.photos/seed/indian-street-food/1200/800',
+    description: 'Taste the diverse and flavorful street food of India safely. Walk through bustling markets and savor iconic local delicacies guided by a food expert.',
+    highlights: ['Curated safe street food tasting', 'Explore old city markets and alleys', 'Learn about the history of local dishes', 'Interact with street food vendors'],
+    duration: 'Half Day',
+    location: 'Old Delhi, Mumbai, and Kolkata',
+  }
+];
+
 export const blogs_data = [
   {
     slug: 'best-time-to-visit-india',

@@ -1,17 +1,8 @@
 'use client';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-
-const experiences = [
-  { title: 'Traditional Indian Weddings', seed: 'indian-wedding' },
-  { title: 'Local Village Tours', seed: 'indian-village' },
-  { title: 'Yoga & Meditation Retreats', seed: 'yoga-retreat' },
-  { title: 'Indian Cooking Classes', seed: 'indian-cooking' },
-  { title: 'Festival Celebrations', seed: 'diwali-celebration' },
-  { title: 'Wildlife Safaris', seed: 'tiger-safari' },
-  { title: 'Temple Tours', seed: 'indian-temple' },
-  { title: 'Street Food Markets', seed: 'indian-street-food' },
-];
+import Link from 'next/link';
+import { experiences_data } from '@/lib/data';
 
 export default function Experiences() {
   return (
@@ -28,13 +19,13 @@ export default function Experiences() {
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-4">Discover the Soul of India</h2>
             <p className="text-white/80 text-lg">We offer exclusive access to authentic local experiences that allow you to participate in Indian culture, rather than just observing it.</p>
           </div>
-          <button className="whitespace-nowrap px-6 py-3 rounded-full border border-white/30 hover:border-white hover:bg-white/10 transition-all font-semibold">
+          <Link href="/experiences" className="whitespace-nowrap px-6 py-3 rounded-full border border-white/30 hover:border-white hover:bg-white/10 transition-all font-semibold">
             View All Experiences
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {experiences.map((exp, idx) => (
+          {experiences_data.slice(0, 8).map((exp, idx) => (
              <motion.div
                key={idx}
                initial={{ opacity: 0, scale: 0.9 }}
@@ -43,6 +34,7 @@ export default function Experiences() {
                transition={{ duration: 0.4, delay: idx * 0.05 }}
                className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer"
              >
+              <Link href={`/experiences/${exp.slug}`} className="block w-full h-full">
                 <Image 
                   src={`https://picsum.photos/seed/${exp.seed}/400/600`}
                   alt={exp.title}
@@ -57,7 +49,8 @@ export default function Experiences() {
                    </h3>
                 </div>
                 {/* Overlay hover effect */}
-                <div className="absolute inset-0 bg-saffron/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-saffron/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              </Link>
              </motion.div>
           ))}
         </div>
